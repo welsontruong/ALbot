@@ -12,6 +12,23 @@
     {"tag": "introduction",
     "patterns":["who are you","what are you","you are"],
     "responses": ["I am Al the AI.","I have been coded to say that I am Al."]
+    },
+    {"tag": "weather",
+    "patterns":[ "weather","sunny","rainy","cloudy","outside"],
+    "responses": ["It'll rain soon.","It is sunny... i think","Is it?"]
+    },
+    {"tags": "number",
+    "patterns":["number","lottery","digits"],
+    "responses":["1","2","3","4","5","6","7","8","9","0"]
+    },
+    {"tags": "jokes",
+    "patterns":["tell me a joke"],
+    "responses":["under construction"]
+    },
+    {"tags":"facts",
+    "patterns":["fact"],
+    "responses": ["under construction"]
     }
+
 
 ]}

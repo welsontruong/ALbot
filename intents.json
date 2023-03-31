@@ -1,0 +1,17 @@
+{"intents": [
+    {"tag": "greetings",
+    "patterns": ["hello","whatsup","Yo","Good afternoon","Good morning","Good evening","How are you?","watsup","sup","hi","how's it going","hey"],
+    "responses": [ "Hello","Hi there!","How is it going?","What is up?"]
+    },
+  
+    {"tag": "farewells",
+    "patterns":["bye","goodbye","cya","thanks","later"],
+    "responses":["Good bye","See you later alligator","Bye Bye","Good day to you"]
+    },
+
+    {"tag": "introduction",
+    "patterns":["who are you","what are you","you are"],
+    "responses": ["I am Al the AI.","I have been coded to say that I am Al."]
+    }
+
+]}

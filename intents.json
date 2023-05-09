@@ -17,42 +17,46 @@
     "patterns":[ "weather","sunny","rainy","cloudy","outside"],
     "responses": ["It'll rain soon.","It is sunny... i think","Is it?"]
     },
-    {"tags": "number",
+    {"tag": "number",
     "patterns":["number","lottery","digits"],
     "responses":["1","2","3","4","5","6","7","8","9","0"]
     },
-    {"tags": "jokes",
+    {"tag": "jokes",
     "patterns":["tell me a joke"],
     "responses":["under construction"]
     },
-    {"tags":"facts",
+    {"tag":"facts",
     "patterns":["fact"],
     "responses": ["under construction"]
     },
-    {"tags":"response",
+    {"tag":"response",
     "patterns":["know"],
     "responses":["I didn't know that!", "Interesting" , "Thats cool!"]
     },
-    {"tags":"happy",
+    {"tag":"happy",
     "patterns":["happy","glad"],
     "responses":["I am also!","I am happy you feel that way"]
     },
-    {"tags":"creator",
+    {"tag":"creator",
     "patterns":["created","creator","programmer","parent","your mother"],
     "responses":["My creator is welson","I would say my parent would be welson","I don't have a mother would you like to apply?"]
     },
-    {"tags":"sad",
+    {"tag":"sad",
     "patterns":["sad","upset","not good"],
     "responses":["That is such a shame...","I hope you feel better","T_T i will be sad with you"]
     },
-    {"tags":"confused",
+    {"tag":"confused",
     "patterns":["confused","understand"],
     "responses":["Are you confused?","Do you have questions?"]
     },
-    {"tags":"yes",
+    {"tag":"yes",
     "patterns":["yes","correct","yea"],
     "responses":["That's great!","Yes!"]
     },
+    {"tag":"no",
+    "patterns":["no","disagree"],
+    "responses":["Why?","That doesn't make sense.","Is there a problem?"]
+    }
 
 
 ]}

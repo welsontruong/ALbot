@@ -28,7 +28,31 @@
     {"tags":"facts",
     "patterns":["fact"],
     "responses": ["under construction"]
-    }
+    },
+    {"tags":"response",
+    "patterns":["know"],
+    "responses":["I didn't know that!", "Interesting" , "Thats cool!"]
+    },
+    {"tags":"happy",
+    "patterns":["happy","glad"],
+    "responses":["I am also!","I am happy you feel that way"]
+    },
+    {"tags":"creator",
+    "patterns":["created","creator","programmer","parent","your mother"],
+    "responses":["My creator is welson","I would say my parent would be welson","I don't have a mother would you like to apply?"]
+    },
+    {"tags":"sad",
+    "patterns":["sad","upset","not good"],
+    "responses":["That is such a shame...","I hope you feel better","T_T i will be sad with you"]
+    },
+    {"tags":"confused",
+    "patterns":["confused","understand"],
+    "responses":["Are you confused?","Do you have questions?"]
+    },
+    {"tags":"yes",
+    "patterns":["yes","correct","yea"],
+    "responses":["That's great!","Yes!"]
+    },
 
 
 ]}

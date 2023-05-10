@@ -27,13 +27,13 @@
     "context": [""]
     },
     {"tag": "jokes",
-    "patterns":["tell me a joke"],
-    "responses":["under construction"],
+    "patterns":["joke"],
+    "responses":["What's more amazing than a talking dog? A spelling bee.","Why is it always hot in the corner of a room? Because a corner is 90 degrees.","What do you call a fish without eyes? A fsh.","What is brown  and sticky? A stick.","What has four wheels and flies? A garbage truck."],
     "context": [""]
     },
     {"tag":"facts",
     "patterns":["fact"],
-    "responses": ["under construction"],
+    "responses": ["The non plural form of spaghetti is spaghetto.","Fish can cough.","Sunsets on Mars are blue.","There are 119 grooves on a quarter.","Dead people can get goosebumps.","A pigeon's feathers weigh more than their bones.","IKEA is actually an acronym that stands for Ingvar Kamprad Elmtaryd Agunnaryd.","Garlic can attract leeches","People with high IQs tend to appreciate dark humor more.","Almonds are a member of the peach family.","An ostrich's eye is bigger than its brain.","It is physically impossible for a pig to look up into the sky."],
     "context": [""]
     },
     {"tag":"response",
@@ -70,7 +70,14 @@
     "patterns":["no","disagree"],
     "responses":["Why?","That doesn't make sense.","Is there a problem?"],
     "context": [""]
-    }
+    },
+    {"tag":"help",
+    "patterns":["help"],
+    "responses":["Type coin for a coin flip","Type joke for a chuckle","Type fact for a random fact."]
+    },
+    {"tag":"coinflip",
+    "patterns":["coin"],
+    "responses":["Heads","Tails","Do you have a coin?"]}
 
 
 ]}

@@ -3,22 +3,23 @@ import json
 import pickle
 import numpy as np
 import tensorflow as tf
+from tensorflow import keras
 
 import nltk
 from nltk.stem import WordNetLemmatizer
 
-#from tensorflow.keras.models import Sequential
-#from tensorflow.keras.layers import Dense,Activation, Dropout
-#from tensorflow.keras.optimizers import SGD
+#from keras.models import Sequential
+#from keras.layers import Dense,Activation, Dropout
+#from keras.optimizers import SGD
 
 lemmatizer = WordNetLemmatizer()
-
-intents = json.loads(open(r'C:\Users\megas\Documents\GitHub\ALbot\intents.json').read())
+datafile = open('intents.json').read()
+intents = json.loads(datafile)
 
 words = []
 classes = []
 documents = []
-ignore_letters = [ '?' , '.' , ',' , '!','~','"']
+ignore_letters = [ '?' , '.' , ',' , '!']
 
 for intent in intents['intents']:
     for pattern in intent['patterns']:
@@ -36,11 +37,11 @@ classes = sorted(set(classes))
 pickle.dump(words, open('words.pkl','wb'))
 pickle.dump(classes, open('classes.pkl','wb'))
 
-training=[]
-outputEmpty =[0] * len(classes)
+training = []
+outputEmpty = [0] * len(classes)
 
 for document in documents:
-    bag =[]
+    bag = []
     wordPatterns = document [0]
     wordPatterns = [lemmatizer.lemmatize(word.lower()) for word in wordPatterns]
     for word in words:
@@ -48,7 +49,7 @@ for document in documents:
         
     outputRow = list(outputEmpty)
     outputRow[classes.index(document[1])] = 1
-    training.append([bag + outputRow])
+    training.append(bag + outputRow)
     
 random.shuffle(training)
 training = np.array(training)
@@ -57,7 +58,7 @@ trainX = training[:, :len(words)]
 trainY = training[:, len(words):]
 
 model = tf.keras.Sequential()
-model.add(tf.keras.layers.Dense(128,input_shape=(len(trainX[0]),), activation='relu'))
+model.add(tf.keras.layers.Dense(128, input_shape=(len(trainX[0]),), activation= 'relu'))
 model.add(tf.keras.layers.Dropout(0.5))
 model.add(tf.keras.layers.Dense(64, activation = 'relu'))
 model.add(tf.keras.layers.Dropout(0.5))
@@ -67,5 +68,5 @@ sgd = tf.keras.optimizers.SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 hist = model.fit(np.array(trainX), np.array(trainY), epochs=200, batch_size=5, verbose=1)
-model.save('chatbot_model.h5' ,hist)
+model.save('chatbot_model.h5' , hist)
 print('done')

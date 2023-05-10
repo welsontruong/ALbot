@@ -1,61 +1,75 @@
 {"intents": [
     {"tag": "greetings",
     "patterns": ["hello","whatsup","Yo","Good afternoon","Good morning","Good evening","How are you?","watsup","sup","hi","how's it going","hey"],
-    "responses": [ "Hello","Hi there!","How is it going?","What is up?"]
+    "responses": [ "Hello","Hi there!","How is it going?","What is up?"],
+    "context": [""]
     },
   
     {"tag": "farewells",
     "patterns":["bye","goodbye","cya","thanks","later"],
-    "responses":["Good bye","See you later alligator","Bye Bye","Good day to you"]
+    "responses":["Good bye","See you later alligator","Bye Bye","Good day to you"],
+    "context": [""]
     },
 
     {"tag": "introduction",
     "patterns":["who are you","what are you","you are"],
-    "responses": ["I am Al the AI.","I have been coded to say that I am Al."]
+    "responses": ["I am Al the AI.","I have been coded to say that I am Al."],
+    "context": [""]
     },
     {"tag": "weather",
     "patterns":[ "weather","sunny","rainy","cloudy","outside"],
-    "responses": ["It'll rain soon.","It is sunny... i think","Is it?"]
+    "responses": ["It'll rain soon.","It is sunny... i think","Is it?"],
+    "context": [""]
     },
     {"tag": "number",
     "patterns":["number","lottery","digits"],
-    "responses":["1","2","3","4","5","6","7","8","9","0"]
+    "responses":["1","2","3","4","5","6","7","8","9","0"],
+    "context": [""]
     },
     {"tag": "jokes",
     "patterns":["tell me a joke"],
-    "responses":["under construction"]
+    "responses":["under construction"],
+    "context": [""]
     },
     {"tag":"facts",
     "patterns":["fact"],
-    "responses": ["under construction"]
+    "responses": ["under construction"],
+    "context": [""]
     },
     {"tag":"response",
     "patterns":["know"],
-    "responses":["I didn't know that!", "Interesting" , "Thats cool!"]
+    "responses":["I didn't know that!", "Interesting" , "Thats cool!"],
+    "context": [""]
     },
     {"tag":"happy",
     "patterns":["happy","glad"],
-    "responses":["I am also!","I am happy you feel that way"]
+    "responses":["I am also!","I am happy you feel that way"],
+    "context": [""]
     },
     {"tag":"creator",
     "patterns":["created","creator","programmer","parent","your mother"],
-    "responses":["My creator is welson","I would say my parent would be welson","I don't have a mother would you like to apply?"]
+    "responses":["My creator is welson","I would say my parent would be welson","I don't have a mother would you like to apply?"],
+    "context": [""]
     },
     {"tag":"sad",
     "patterns":["sad","upset","not good"],
-    "responses":["That is such a shame...","I hope you feel better","T_T i will be sad with you"]
+    "responses":["That is such a shame...","I hope you feel better","T_T i will be sad with you"],
+    "context": [""]
     },
     {"tag":"confused",
     "patterns":["confused","understand"],
-    "responses":["Are you confused?","Do you have questions?"]
+    "responses":["Are you confused?","Do you have questions?"],
+    "context": [""]
     },
     {"tag":"yes",
     "patterns":["yes","correct","yea"],
-    "responses":["That's great!","Yes!"]
+    "responses":["That's great!","Yes!"],
+    "context": [""]
     },
     {"tag":"no",
     "patterns":["no","disagree"],
-    "responses":["Why?","That doesn't make sense.","Is there a problem?"]
+    "responses":["Why?","That doesn't make sense.","Is there a problem?"],
+    "context": [""]
     }
 
 

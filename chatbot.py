@@ -6,7 +6,7 @@ import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
 
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
 inntents = json.loads(open('intents.json').read())
@@ -45,7 +45,7 @@ def get_response(intents_list, intents_json):
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if i['tag'] == tag:
-            result = random.choice(i['response'])
+            result = random.choice(i['responses'])
             break
     return result
 
@@ -53,6 +53,6 @@ print("start talking")
 
 while True:
     message = input("")
-    ints = preict_class(message)
-    res = get_response(ints,intents)
-    print(res)
+    ints = predict_class(message)
+    resp = get_response(ints , inntents)
+    print(resp)

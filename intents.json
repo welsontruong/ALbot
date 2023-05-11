@@ -12,7 +12,7 @@
     },
 
     {"tag": "introduction",
-    "patterns":["who are you","what are you","you are"],
+    "patterns":["who are you","what","you"],
     "responses": ["I am Al the AI.","I have been coded to say that I am Al."],
     "context": [""]
     },
@@ -77,7 +77,11 @@
     },
     {"tag":"coinflip",
     "patterns":["coin"],
-    "responses":["Heads","Tails","Do you have a coin?"]}
+    "responses":["Heads","Tails","Do you have a coin?"]
+    },
+    {"tag":"name",
+    "patterns":["name"],
+    "responses":["My name is Al."]}
 
 
 ]}

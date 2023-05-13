@@ -85,7 +85,7 @@
     },
     {"tag":"time",
     "patterns":["time"],
-    "responses":["It is fun o'clock!"]
+    "responses":[localtime]
     }
 
 

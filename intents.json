@@ -81,7 +81,12 @@
     },
     {"tag":"name",
     "patterns":["name"],
-    "responses":["My name is Al."]}
+    "responses":["My name is Al.","You can call whatever you like."]
+    },
+    {"tag":"time",
+    "patterns":["time"],
+    "responses":["It is fun o'clock!"]
+    }
 
 
 ]}

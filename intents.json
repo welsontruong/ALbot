@@ -11,6 +11,12 @@
     "context": [""]
     },
 
+    {"tag":"doing",
+    "patterns":["how are you"],
+    "responses":["I am doing as well as any other AI...."],
+    "context":[""]
+    },
+
     {"tag": "introduction",
     "patterns":["who are you","what","you"],
     "responses": ["I am Al the AI.","I have been coded to say that I am Al."],

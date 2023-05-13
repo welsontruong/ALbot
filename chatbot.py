@@ -3,6 +3,7 @@ import json
 import pickle
 import time
 import numpy as np
+import requests
 
 import nltk
 from nltk.stem import WordNetLemmatizer
@@ -14,7 +15,7 @@ inntents = json.loads(open('intents.json').read())
 
 words = pickle.load(open('words.pkl','rb'))
 classes = pickle.load(open('classes.pkl','rb'))
-model = load_model('chatbot_model.h5')
+model = load_model('model.h5')
 localtime = time.localtime(time.time())
 
 def clean_up_sentence(sentence):

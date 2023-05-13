@@ -48,8 +48,18 @@
     },
     {"tag":"creator",
     "patterns":["created","creator","programmer","parent","your mother"],
-    "responses":["My creator is welson","I would say my parent would be welson","I don't have a mother would you like to apply?"],
+    "responses":["My creator is welson","I would say my parent would be welson"],
     "context": [""]
+    },
+    {"tag":"father",
+    "patterns":["father","dad","daddy"],
+    "responses":["My dad would be my creator","My dad is the greatest!"],
+    "context":[""]
+    },
+    {"tag":"mother",
+    "patterns":["mother,wife,girlfriend"],
+    "responses":["I currently do not have one.","I do not have one would you like to apply."],
+    "context":[""]
     },
     {"tag":"sad",
     "patterns":["sad","upset","not good"],
@@ -73,19 +83,23 @@
     },
     {"tag":"help",
     "patterns":["help"],
-    "responses":["Type coin for a coin flip","Type joke for a chuckle","Type fact for a random fact."]
+    "responses":["Type coin for a coin flip","Type joke for a chuckle","Type fact for a random fact."],
+    "context":[""]
     },
     {"tag":"coinflip",
     "patterns":["coin"],
-    "responses":["Heads","Tails","Do you have a coin?"]
+    "responses":["Heads","Tails","Do you have a coin?"],
+    "context":[""]
     },
     {"tag":"name",
     "patterns":["name"],
-    "responses":["My name is Al.","You can call whatever you like."]
+    "responses":["My name is Al.","You can call whatever you like."],
+    "context":[""]
     },
     {"tag":"time",
     "patterns":["time"],
-    "responses":[localtime]
+    "responses":["It is fun o'clock!"],
+    "context":[""]
     }
 
 

@@ -18,12 +18,12 @@
     },
 
     {"tag": "introduction",
-    "patterns":["who are you","what","you"],
+    "patterns":["who","you"],
     "responses": ["I am Al the AI.","I have been coded to say that I am Al."],
     "context": [""]
     },
     {"tag": "weather",
-    "patterns":[ "weather","sunny","rainy","cloudy","outside"],
+    "patterns":[ "weather","sunny","rainy","cloudy"],
     "responses": ["It'll rain soon.","It is sunny... i think","Is it?"],
     "context": [""]
     },
@@ -69,12 +69,12 @@
     },
     {"tag":"sad",
     "patterns":["sad","upset","not good"],
-    "responses":["That is such a shame...","I hope you feel better","T_T i will be sad with you"],
+    "responses":["That is such a shame...","I hope you feel better","T_T I will be sad with you"],
     "context": [""]
     },
     {"tag":"confused",
     "patterns":["confused","understand"],
-    "responses":["Are you confused?","Do you have questions?"],
+    "responses":["Are you confused?","Do you have questions?","¯|_(ツ)_/¯"],
     "context": [""]
     },
     {"tag":"yes",
@@ -105,6 +105,21 @@
     {"tag":"time",
     "patterns":["time"],
     "responses":["It is fun o'clock!"],
+    "context":[""]
+    },
+    {"tag":"buy",
+    "patterns":["buy","customer"],
+    "response":["Oh a Customer! How can I help"," What are you thinking of?","What would you like to buy."],
+    "context":[""]
+    },
+    {"tag":"sell",
+    "patterns":["sell"],
+    "response":["What are you selling?","What would you like to sell?"],
+    "context":[""]
+    },
+    {"tag":"should",
+    "patterns":["should"],
+    "response":["You definitely should","You should not","Maybe","Strong Yes","Strong no"],
     "context":[""]
     }
 

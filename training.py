@@ -20,7 +20,7 @@ intents = json.loads(datafile)
 words = []
 classes = []
 documents = []
-ignore_letters = [ '?' , '.' , ',' , '!' , '"', '~']
+ignore_letters = [ '.' , ',' , '!' , '"', '~', '?']
 
 for intent in intents['intents']:
     for pattern in intent['patterns']:
